@@ -1,11 +1,8 @@
-package at.home.training.designpatterns.creational.factory;
+package at.home.training.designpatterns.creational.abstractfactory;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
-import at.home.training.designpatterns.creational.abstractfactory.FactoryProducer;
 import at.home.training.designpatterns.creational.factory.Shape.Shapes;
+import static org.junit.Assert.fail;
+import org.junit.Test;
 
 public class FactoryProducerTest {
 
@@ -15,7 +12,7 @@ public class FactoryProducerTest {
 			FactoryProducer.getFactory("SHAPE").getShape(Shapes.RECTANGLE).draw();
 		} catch (Exception e) {
 			fail(e.getMessage() + " oups");
-		};
+		}
 	}
 
 }
